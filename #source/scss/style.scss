@@ -1,0 +1,185 @@
+
+//Файл шрифтов
+@import url("../fonts/nekst/stylesheet.css");
+// Файл обнуляющих стилей
+@import "nullstyle";
+.page {
+   font-family: 'Nekst';
+   // .page__background
+
+   &__background {
+
+   }
+
+   // .page__wrapper
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+   }
+
+   // .page__header
+
+   &__header {
+      font-size: 24px;
+   }
+   &__main{
+      flex: 1 1 auto;
+
+   }
+   &__footer{
+   }
+}
+.header {
+
+   width: 100%;
+   background-color: var(--extra-dark);
+   color: var(--extra-light);
+   box-shadow: inset  0px -5px 30px var(--main-dark);
+
+   // .header__row
+
+   &__row {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr;
+   }
+
+   // .header__menu
+
+   &__menu {
+   }
+
+   // .header__profile
+
+   &__profile {
+   }
+}
+.container {
+    max-width: 1400px;
+    margin: 0px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.logo {
+}
+.menu {
+
+   // .menu__list
+
+   &__list {
+      display: flex;
+      gap: 20px;
+   }
+
+   // .menu__link
+
+   &__link {
+   }
+}
+.main {
+   
+   background: var(--extra-light);
+   box-shadow: inset 0px -10px 75px var(--main-dark);
+
+   &__book-profile{
+      margin-top: 50px;
+   }
+   .book-profile {
+
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-column-gap: 24px;
+      grid-template-areas: 
+      "img info"
+      "category info";
+
+		// .book-profile__img
+   
+		&__img {
+         object-fit: cover;
+         width: 300px;
+         height: 500px;
+         border: 1px solid black;
+         grid-area: img;
+		}
+
+		// .book-profile__category
+
+		&__category {
+         grid-area: category;
+         margin-top: 10px;
+		}
+
+		// .book-profile__info-block
+
+		&__info-block {
+         grid-area: info;
+		}
+
+		// .book-profile__title
+
+		&__title {
+         font-size: 24px;
+         margin-bottom: 24px;
+		}
+}
+.category {
+   display: flex;
+   justify-content: space-between;
+		// .category__item
+      li{
+      }
+		&__item {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 8px;
+         border-radius: 5px;
+         font-size: 18px;
+         background-color: var(--main-dark);
+         border-color: var(--middle-dark);
+         box-shadow: inset 0px 20px 25px var(--extra-dark);
+         width: 100%;
+		}
+      &__item svg{
+         fill: var(--extra-light);
+         width: 24px;
+         height: 24px;
+      }
+      &__item svg path{
+         width: 24px;
+         height: 24px;
+      }
+}
+.data {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+
+		// .data__item
+
+		&__item {
+		}
+}
+.data-item {
+		// .data-item__title
+
+		&__title {
+         font-size: 18px;
+
+		}
+
+		// .data-item__text
+
+		&__text {
+         
+         font-size: 18px;
+		}
+}
+
+}
+.footer {
+   width: 100%;
+}
